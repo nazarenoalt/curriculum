@@ -115,7 +115,7 @@ footer {
     width: 30px;
     margin-right: 10px;
 }
-.redes-portafolio__list a:hover {
+.redes-portafolio__list a:hover, #github-span:hover {
     opacity: 80%;
 }
 .redes-portafolio__list a::after {
@@ -143,10 +143,18 @@ footer {
 .redes-portafolio__list span{
     visibility: hidden;
 }
-/*::After de cada una de las redes*/
-.redes-portafolio__list .github::after {
-    content: "Github"
+
+/*Debido a que por alguna razon al pasarlo a PDF el :after de github queda descolocado, tuve que sacarlo y aplicar el span de la siguiente forma*/
+#github-div {
+    position: relative;
 }
+#github-span {
+    visibility: visible;
+    position: absolute;
+    top: -5px;
+}
+
+/*::After de cada una de las redes*/
 .redes-portafolio__list .linkedin::after {
     content: "Linkedin"
 }
