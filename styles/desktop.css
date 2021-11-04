@@ -78,11 +78,23 @@ header{
 
 /*MAIN*/
 main {
-    margin-top: 350px;
+    margin-top: 400px;
 }
 /*IDIOMAS*/
 .idiomas__list span {
     width: 100%;
+}
+
+.hobbies {
+    top: 1056px;
+    width: 37%;
+    position: absolute;
+}
+
+.idiomas {
+    position: absolute;
+    top: 1299px;
+    width: 38%;
 }
 /*FOOTER*/
 footer {
