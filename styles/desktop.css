@@ -12,6 +12,7 @@
 body {
     background: var(--white);
 }
+
 /*DISEÑOS ESPECIALES*/
 .compressed-list li {
     width: 80%;
@@ -57,6 +58,7 @@ header{
 .name {
     width: 100%;
     color:var(--black);
+    margin: 0;
 }
 .profession {
     color:var(--black);
@@ -65,7 +67,7 @@ header{
 .description {
     color: var(--black);
     width: 80%;
-    margin: 0 auto;
+    margin: 50px auto 0;
 }
 
 .description:before {
@@ -74,11 +76,13 @@ header{
     font-size: 1.5em;
     font-weight: bold;
     border-bottom: 1px solid var(--soft-blue);
+    margin-bottom: 15px;
 }
 
 /*MAIN*/
 main {
-    margin-top: 400px;
+    margin-top: 500px;
+    height: 100%;
 }
 /*IDIOMAS*/
 .idiomas__list span {
@@ -86,15 +90,17 @@ main {
 }
 
 .hobbies {
-    top: 1056px;
-    width: 37%;
-    position: absolute;
+    margin: 0 auto;
+    margin-top: -50px;  
 }
 
-.idiomas {
-    position: absolute;
-    top: 1299px;
-    width: 38%;
+.idiomas .subtitle{
+    margin: 0;
+}
+
+.idiomas__list {
+    display: block;
+    margin-top: 30px;
 }
 /*FOOTER*/
 footer {
@@ -166,7 +172,7 @@ footer {
     content: "Github";
 }
 .redes-portafolio__list .linkedin::after {
-    content: "Linkedin"
+    content: "/nazarenoalt"
 }
 .redes-portafolio__list .instagram::after {
     content: "Instagram"
